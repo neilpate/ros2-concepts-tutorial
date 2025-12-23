@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ROS 2: Debug Node",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/install/my_first_pkg/lib/python3.12/site-packages:/opt/ros/humble/lib/python3.12/site-packages:${env:PYTHONPATH}",
+                "PATH": "${workspaceFolder}/install/my_first_pkg/bin:${env:PATH}"
+            }
+        }
+    ]
+}
