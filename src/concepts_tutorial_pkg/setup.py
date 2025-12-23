@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            "counter_publisher_node = concepts_tutorial_pkg.main:main",
+            "counter_publisher_node = concepts_tutorial_pkg.counter_publisher:main",
+            "counter_subscriber_node = concepts_tutorial_pkg.counter_subscriber:main"
         ],
     },
 )
